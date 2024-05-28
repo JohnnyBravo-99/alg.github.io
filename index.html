@@ -4,6 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join Our Discord</title>
+  <script>
+  // Redirect based on domain and path
+  const hostname = window.location.hostname;
+  const pathname = window.location.pathname;
+
+  if (pathname === '/discord') {
+    if (hostname === 'www.apex-limitless.com' || hostname === 'apex-limitless.com') {
+      window.location.href = 'https://discord.gg/7MTkXgAe';
+    } else if (hostname === 'another-domain.com') {
+      window.location.href = 'https://discord.gg/7MTkXgAe';
+    }
+    // Add more domains as needed
+  }
+</script>
   <style>
     body {
       display: flex;
