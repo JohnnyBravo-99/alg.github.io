@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [],
+  purge: ['/*.html'],
   darkMode: false, // or 'media' or 'class'
   content: [
   './*.html',           // Your HTML files in the root directory
