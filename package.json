@@ -2,7 +2,7 @@
   "name": "alg.github.io",
   "version": "1.0.0",
   "description": "coming soon..",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "tailwindcss -i ./src/input.css -o ./src/output.css"
