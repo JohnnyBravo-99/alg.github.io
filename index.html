@@ -3,58 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/ouput.css" rel="stylesheet">
   <title>Join Our Discord</title>
-  <script>
-  // Redirect based on domain and path
-  const hostname = window.location.hostname;
-  const pathname = window.location.pathname;
-
-  if (pathname === '/discord') {
-    if (hostname === 'www.apex-limitless.com' || hostname === 'apex-limitless.com') {
-      window.location.href = 'https://discord.gg/7MTkXgAe';
-    } else if (hostname === 'another-domain.com') {
-      window.location.href = 'https://discord.gg/7MTkXgAe';
-    }
-    // Add more domains as needed
-  }
-</script>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-    }
-    .container {
-      text-align: center;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-      color: #fff;
-      background-color: #7289da;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    a:hover {
-      background-color: #677bc4;
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
+
+  <div class="w-50% h-50 bg-[#660000] flex-auto relative shadow-md">
     <h1>Join Our Discord Community</h1>
     <p>Click the button below to join our Discord server!</p>
     <a href="https://discord.gg/7MTkXgAe" target="_blank">Join Discord</a>
