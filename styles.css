@@ -1,25 +1,34 @@
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400vh;
+    justify-content: left;
+    align-items: flex-start;
+    height: 100vh;
     background-color: #333333;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 .button-container {
     text-align: center;
+    width: 5em;
+    max-width: 1000px;
+    height: 5em;
 }
 .button {
+    align-content: center;
+    display: block;
     background-color: #660000;
     color: white;
-    padding: 15px 30px;
-    margin: 10px;
+    padding: 15px 0;
+    margin: 15px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
+    width: 100px;
+    height: 100px;
+    box-shadow: #3B0B0B;
+
 }
 .button:hover {
     background-color: #3B0B0B;
