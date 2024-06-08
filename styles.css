@@ -1,35 +1,33 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #333333;
-    margin: 0;
+
+    background-image:url('https://www.dropbox.com/scl/fi/j6g0n2dboxuz65ig6b65b/807b9f24-9fae-4245-a540-069ba8fd658f.webp?rlkey=clwnk2giiac80kd9kpiw3nbh4&st=6e8b75o1&raw=1');
     font-family: Arial, sans-serif;
 }
-.button-container {
-    text-align: center;
-    width: 5em;
-    max-width: 1000px;
-    height: 5em;
-}
-.button {
-    align-content: center;
-    display: block;
-    background-color: #660000;
-    color: white;
-    padding: 15px 0;
-    margin: 15px 0;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 22px;
-    text-decoration: none;
-    width: 100px;
-    height: 100px;
-    box-shadow: #3B0B0B;
+
+.slide-left {
+
+transform: translateX(-100vw);
+transition: transform 1s ease-out;
 
 }
-.button:hover {
-    background-color: #3B0B0B;
+
+.slide-right{
+
+    transform: translateX(100vw);
+    transition: transform 1s ease-out;
+
+}
+
+.slide-in{
+
+    transform: translateX(0);
+
+}
+
+.containerDivs 
+{
+    font-weight:bolder;
+    color: #660000;
+    text-shadow:black;
+    //*box-shadow: black;*/
 }
