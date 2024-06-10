@@ -32,8 +32,11 @@ transition: transform 1s ease-out;
     //*box-shadow: black;*/
 }
 
-.hovered {
 
-    background: none;
+#rightDiv, #leftDiv {
+
+    width: 15rem;
+    height: 10%%;
+    text-align: center;
 
 }
