@@ -7,20 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Apex Limitless Gaming</title>
 </head>
-<body class="containerDivs bg-cover bg-bottom h-screen flex font-items-center hustify-center">
-    <div class="relative w-full h-full flex items-center justify-center">
-        <a href="https://discord.gg/xdJQzvFF97" id="leftDiv" class="absolute bg-gray-500 bg-opacity-50 p-3 rounded-lg slide-left">Discord</a>
+<body class="bg-cover bg-bottom">
+    <div class=" h-screen flex font-items-center hustify-center">
+        <div class="box-shadow relative w-full h-full flex items-center justify-center">
+            <a href="https://discord.gg/xdJQzvFF97" id="leftDiv" class="absolute bg-gray-500 bg-opacity-50 p-3 rounded-lg slide-left">Discord</a>
+        </div>
+        <div class="rightDiv w-full h-full flex items-center justify-center">
+            <a href="https://alg.paynow.store/" id="rightDiv" class="absolute bg-gray-500 bg-opacity-50 p-3 rounded-lg slide-right">Donate</a>
+        </div>
     </div>
-    <div class="relative w-full h-full flex items-center justify-center">
-        <a href="https://alg.paynow.store/" id="rightDiv" class="absolute bg-gray-500 bg-opacity-50 p-3 rounded-lg slide-right">Donate</a>
-    </div>
-
     <script>
+
+        function addHoverEffect(element) {
+            element.addEventListener('mouseover', function() {
+                element.classList.add('hovered');
+            });
+
+            element.addEventListener('mouseout', function() {
+
+                element.classList.remove('hovered');
+
+            });
+
+        }
 
 window.addEventListener('load', function() {
 
-    document.getElementById('leftDiv').classList.add('slide-in');
-    document.getElementById('rightDiv').classList.add('slide-in');
+    // Wait for the DOM to load
+    // constants defined
+    const leftdiv = document.getElementById('leftDiv');
+    const rightDiv = document.getElementById('rightDiv');
+
+    addHoverEffect(leftdiv);
+    addHoverEffect(rightDiv);
+
+    leftDiv.classList.add('slide-in');
+    rightDiv.classList.add('slide-in');
+
+
 
 });
 

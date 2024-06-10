@@ -31,3 +31,9 @@ transition: transform 1s ease-out;
     text-shadow:black;
     //*box-shadow: black;*/
 }
+
+.hovered {
+
+    background: none;
+
+}
