@@ -8,25 +8,26 @@
     <title>Apex Limitless Gaming</title>
 </head>
 <body class="bg-cover bg-bottom">
-    <div class=" h-screen flex font-bold justify-center items-center">
-        <div class="fixed w-full h-full flex justify-center items-center">
-            <a href="https://discord.gg/xdJQzvFF97" id="leftDiv" class="absolute bg-gray-500 bg-opacity-50 p-1 rounded-lg slide-left">Discord</a>
+    <div class="static h-screen flex font-bold justify-center items-center">
+        <div class="absolute w-full h-full flex items-center justify-center">
+            <a href="https://discord.gg/7Z4BGZEeys" id="leftDiv" class="absolute bg-gray-500 bg-opacity-50 p-1 rounded-lg slide-left">Discord</a>
         </div>
-        <div  class="absolute w-full h-full flex  ">
-            <a href="https://alg.paynow.store/" id="rightDiv" class="absolute bg-gray-500 bg-opacity-50 p-2 rounded-lg slide-right">Donate</a>
+        <div  class="absolute w-full h-full flex items-center justify-center ">
+            <a href="https://alg.paynow.store/" id="rightDiv" class="absolute bg-gray-500 bg-opacity-50 p-1 rounded-lg slide-right">Donate</a>
         </div>
     </div>
     <script>
 
         function addHoverEffect(element) {
             element.addEventListener('mouseover', function() {
-                element.classList.remove('bg-gray-500');
-                element.classList.add('text-[#7289DA]');
+                element.classList.remove('bg-opacity-50');
+                element.idList.add('bg-opacity-80', 'rDivStyle');
+                
             });
 
             element.addEventListener('mouseout', function() {
-                element.classList.add('bg-gray-500');
-                element.classList.remove('bg-transparent text-[#7289DA]');
+                element.classList.remove('bg-opacity-80', 'rDivStyle');
+                element.classList.add('bg-opacity-50');
 
             });
 
@@ -42,11 +43,8 @@ window.addEventListener('load', function() {
     addHoverEffect(leftDiv);
     addHoverEffect(rightDiv);
 
-    leftDiv.classList.add('slide-in');
-    rightDiv.classList.add('slide-in');
-
-
-
+    leftDiv.classList.add('slide-inLeft');
+    rightDiv.classList.add('slide-inRight');
 });
 
     </script>

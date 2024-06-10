@@ -18,25 +18,30 @@ transition: transform 1s ease-out;
 
 }
 
-.slide-in{
+.slide-inRight{
 
-    transform: translateX(0);
+    transform: translateX(10VW);
 
 }
 
-.containerDivs 
-{
-    font-weight:bolder;
-    color: #660000;
-    text-shadow:black;
-    //*box-shadow: black;*/
-}
+.slide-inLeft{
 
+    transform: translateX(-10VW);
+
+}
 
 #rightDiv, #leftDiv {
 
     width: 15rem;
-    height: 10%%;
+    height: 2rem;
     text-align: center;
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+.rDivStyle {
+
+    color: #5865F2;
 
 }
